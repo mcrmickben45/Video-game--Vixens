@@ -3,16 +3,16 @@
 body {
 /* Trying to code in a background image // potential gifs */ 
 
-    background-image: url('neon-stream1.gif');
-    background-size: cover;
-    background-position: center center;
-    margin: 0; 
-    padding: 0; 
-    display: grid; 
-    grid-template-columns: 1fr auto; 
-    grid-gap: 20px; 
-    align-items: center; 
-    justify-content: space-between; 
+background-image: url('../assets/images/neon-stream1.gif'); /* Adjust the path as needed */
+background-size: cover;
+background-position: center center;
+margin: 0;
+padding: 0;
+display: grid;
+grid-template-columns: 1fr auto;
+grid-gap: 20px;
+align-items: center;
+justify-content: space-between;
 }
 
 /* Style the h1 element */
@@ -45,12 +45,17 @@ li {
 }
 
 /* Style the banner element */
-banner {
-  background-color: #f0f0f0; 
+.banner {
+  background-color: 
   padding: 0px; 
   margin: 0; 
   text-align: center; 
+  height: 100vh;
+  position: relative;
 }
+
+
+
 
 /* Style the filter section */
 #filter {
