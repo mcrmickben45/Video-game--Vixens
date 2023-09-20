@@ -1,27 +1,24 @@
+// Add starter code for console buttons
+
+// Function to load games of a selected genre
+function loadGamesByGenre(genre) {
+}
+
 document.addEventListener("DOMContentLoaded", function () {
-    const searchButton = document.getElementById("search-button");
-    const searchBar = document.getElementById("search-bar");
-    const searchForm = document.getElementById("search-form");
-  
-    // Function to toggle the visibility of the search bar
-    function toggleSearchBar() {
-      searchBar.classList.toggle("hidden");
-    }
-  
-    // Function to handle form submission
-    function submitSearch() {
-      const query = document.getElementById("query-input").value;
-      
-      // You can replace this with the actual search functionality or URL
-      alert(`Searching for: ${query}`);
-    }
-  
-    // Attach event listeners
-    searchButton.addEventListener("click", toggleSearchBar);
-    searchForm.addEventListener("submit", function (e) {
-      e.preventDefault(); // Prevents the form from submitting normally
-      submitSearch();
-    });
+  const sortFilterBtn = document.getElementById("sortFilterBtn");
+  const genreDropdown = document.getElementById("genreDropdown");
+
+  // Event listener for Sort & Filter button click
+  sortFilterBtn.addEventListener("click", function () {
+      // Toggle the display of the genre dropdown
+      genreDropdown.style.display = (genreDropdown.style.display === "none") ? "block" : "none";
   });
+
+  // Event listeners
+  genreDropdown.addEventListener("change", function () {
+      const selectedGenre = genreDropdown.value;
+      loadGamesByGenre(selectedGenre);
+  });
+
   
-  
+});

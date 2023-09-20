@@ -1,25 +1,36 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale">
-    <title>Video(game) Vixens</title>
+    <title>Videogame Vixens</title>
+    <link rel="stylesheet" type="text/css" href=".assets/style.css">
 </head>
-<header class="">
-    <div class=""></div>
-</header>
 <body>
-    <div class="">
-
+    <h1>Videogame Vixens</h1>
+    <h2>Free to Play</h2>
+    <nav>
+        <ul>
+            <li><a href="#" id="platform1">Nintendo Switch</a></li>
+            <li><a href="#" id="platform2">PC</a></li>
+            <li><a href="#" id="platform3">Playstation</a></li>
+            <li><a href="#" id="platform3">Xbox</a></li>
+        </ul>
+        <banner>Ready for your next quest?</banner>
+    </nav>
+    <div id="filter">
+        <button id="sortFilterBtn">Sort & Filter</button>
+        <select id="genreDropdown">
+            <option value="action">Action</option>
+            <option value="adventure">Adventure</option>
+            <option value="strategy">Strategy</option>
+            <!-- Add more genres as needed -->
+        </select>
     </div>
-    <div id = "wrapper"></div>
-    <h1>Video Game Vixens</h1> 
-    <h2>Ready For Your Next Quest?</h2>
-    <button id = "search">
-    <h3>Find Your Next Game Here</h3>
-    </button>
-    <p>This is a basic HTML structure.</p> 
+    <div id="gameList">
+        <!-- Display games here -->
+    </div>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
-<link rel="stylesheet" href=".assets/style.css">
-<script src="script.js"></script>
