@@ -15,20 +15,26 @@ align-items: center;
 justify-content: space-between;
 }
 
+.header {
+  text-align: center;
+}
 /* Style the h1 element */
-h1 {
-  background-color: #f0f0f0; 
-  margin-left: 100px;
+.title {
+  background-color: #30a2cf; 
   padding: 10px; 
-  text-align: right; 
+  text-align: center; 
+  display: inline-block;
+  border-radius: 10px;
+  
 }
 
 /* Style the h2 element */
-h2 {
-    background-color: #f0f0f0; 
-    padding: 10px; 
-    margin: 0; 
-    text-align: left; 
+.title h1
+.title h2 {
+    background-color: transparent;
+    display: inline;
+    margin: 0;
+    
 }
 
 /* Style the ul element */
