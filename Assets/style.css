@@ -1,4 +1,95 @@
+
+/* Apply styles to the body to set a background color */
 body {
+/* Trying to code in a background image // potential gifs */ 
+
+    background-image: url('neon-stream1.gif');
+    background-size: cover;
+    background-position: center center;
+    margin: 0; 
+    padding: 0; 
+    display: grid; 
+    grid-template-columns: 1fr auto; 
+    grid-gap: 20px; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+/* Style the h1 element */
+h1 {
+  background-color: #f0f0f0; 
+  margin-left: 100px;
+  padding: 10px; 
+  text-align: right; 
+}
+
+/* Style the h2 element */
+h2 {
+    background-color: #f0f0f0; 
+    padding: 10px; 
+    margin: 0; 
+    text-align: left; 
+}
+
+/* Style the ul element */
+ul {
+  list-style: none; 
+  display: flex; 
+  justify-content: center; 
+  padding: 0; 
+}
+
+/* Style the li elements within the ul */
+li {
+  margin: 0 30px; 
+}
+
+/* Style the banner element */
+banner {
+  background-color: #f0f0f0; 
+  padding: 0px; 
+  margin: 0; 
+  text-align: center; 
+}
+
+/* Style the filter section */
+#filter {
+  text-align: center; 
+  margin: 20px 0; 
+}
+
+/* Style the sort filter button */
+#sortFilterBtn {
+  background-color: #f0f0f0; 
+  padding: 10px 20px; 
+  border: none; 
+  cursor: pointer; 
+}
+
+/* Style the genre dropdown */
+#genreDropdown {
+  background-color: #f0f0f0; 
+  padding: 5px; 
+  border: none; 
+}
+
+/* Style the game list container */
+#gameList {
+  background-color: #f0f0f0; 
+  padding: 20px; 
+  margin: 20px 0; 
+}
+
+/* Add styles for images within the game list if needed */
+#gameList img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+}
+
+
+
+/*body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     text-align: center;
@@ -25,6 +116,6 @@ nav ul li {
 
 #genreDropdown {
     display: none; /* Hide by default */
-}
+
 
 /* Add more CSS styles */
