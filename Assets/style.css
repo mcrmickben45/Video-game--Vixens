@@ -71,24 +71,27 @@ li {
 
 /* Style the sort filter button */
 #sortFilterBtn {
-  background-color: #f0f0f0; 
+  background-color: #30a2cf;  
   padding: 10px 20px; 
   border: none; 
   cursor: pointer; 
+  border-radius: 10px;
 }
 
 /* Style the genre dropdown */
 #genreDropdown {
-  background-color: #f0f0f0; 
+  background-color: #30a2cf;  
   padding: 5px; 
   border: none; 
+  border-radius: 10px;
 }
 
 /* Style the game list container */
 #gameList {
-  background-color: #f0f0f0; 
+  background-color: #30a2cf;  
   padding: 20px; 
   margin: 20px 0; 
+  border-radius: 10px;
 }
 
 /* Add styles for images within the game list if needed */
