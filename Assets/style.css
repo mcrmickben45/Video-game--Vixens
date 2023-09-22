@@ -96,6 +96,27 @@ body {
       margin: 20px 0; 
       border-radius: 10px;
     }
+
+    h3 {
+        background-color: #30a2cf; 
+        padding: 10px; 
+        border-radius: 10px;
+    }
+    
+
+    .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center images horizontally */
+    }
+    
+    .image {
+        max-width: 100%; /* Set a maximum width for scaling */
+        height: 50%; /* Automatically adjust height to maintain aspect ratio */
+        margin: 10px;
+        box-sizing: border-box; /* Include margin in the width calculation */
+    }
+    
     
     /* Add styles for images within the game list if needed */
     #gameList img {
