@@ -6,3 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 var console2Button = document.getElementById("console2");
+
+var gameListDiv = document.createElement("gameList");
+
+console2Button.addEventListener("click", function () {
+ 
