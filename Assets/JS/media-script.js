@@ -1,11 +1,11 @@
 // Array of image file paths
 const imageFiles = [
-    './assets/images/smite.jpg', 
-    './assets/images/lol.jpg', 
-    './assets/images/genshin.jpg',
-    './assets/images/apex-legends.jpg', 
-    './assets/images/runescape.jpg', 
-    './assets/images/brawlhalla.jpg',
+    './assets/Images/PC-Images/smite.jpg', 
+    './assets/Images/PC-Images/lol.jpg', 
+    './assets/Images/PC-Images/genshin.jpg',
+    './assets/Images/PC-Images/apex-legends.jpg', 
+    './assets/Images/PC-Images/runescape.jpg', 
+    './assets/Images/PC-Images/brawlhalla.jpg',
 ];
 
 // Function to create and organize images in a grid
