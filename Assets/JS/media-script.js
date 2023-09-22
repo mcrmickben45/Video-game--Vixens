@@ -1,10 +1,13 @@
 // Array of image file paths
 const imageFiles = [
     './assets/Images/PC-Images/smite.jpg', 
+    './assets/Images/PLAYSTATION-Images/FallGuys.jpg',
     './assets/images/Xbox-Images/Asphalt.jpeg',
     './assets/Images/PC-Images/lol.jpg', 
+    './assets/Images/PLAYSTATION-Images/kartrider.jpg',
     './assets/images/Xbox-Images/BrawlHalla.jpeg',
     './assets/Images/PC-Images/genshin.jpg',
+    './assets/Images/PLAYSTATION-Images/Warframe.jpg',
     './assets/images/Xbox-Images/Destiny 2.jpeg',
     './assets/Images/PC-Images/apex-legends.jpg', 
     './assets/images/Xbox-Images/Fortnite.jpeg',
