@@ -56,41 +56,51 @@ button {
 }
     
 
+/* Styles for the modal and its content */
 .modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
+  display: none; /* Hide the modal by default */
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background-color: rgb(0,0,0); 
-  background-color: rgba(0,0,0,0.4); 
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
+  overflow: auto;
 }
 
-.music-modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; 
+.dad-modal-content {
+  background-color: white; /* White background for the content */
+  margin: 15% auto; /* Center the content vertically and horizontally */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; 
+  width: 60%; /* Adjust the width as needed */
+  box-shadow: 0px 0px 10px 0px #000;
+  text-align: center;
 }
 
 .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
   cursor: pointer;
 }
-    
+
+/* Additional styles for the dad joke display (you can modify these as needed) */
+#dadJokeContainer {
+  font-size: 18px;
+  color:black;  
+  background-color: #30a2cf;
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+}
 
 h3 {
   background-color: #30a2cf; 

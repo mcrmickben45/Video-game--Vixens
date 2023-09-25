@@ -18,17 +18,26 @@
         </div>
         <nav>
             <ul>
-                <li><button id="newgames">New Games</button></li>
-                <li> <button id="new-music-button">New Music</button></li>
-                <!-- Music Modal -->
-                <div id="musicModal" class="modal">
-                     <!-- Modal content -->
-                <div class="music-modal-content">
+                <li> <button id="gamesBtn">New Games</button> </li>
+                <!-- Games Modal -->
+                <div id="gamesModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="games-modal-content">
+                        <span class="close">&times;</span>
+                        <p>Find your New Game here</p>
+                      </div>
+                    </div>   
+                <li> <button id="dad-button">Want to hear a joke?</button></li>
+                <!-- Your modal structure with a container for the dad joke and user input -->
+                    <div id="dadModal" class="modal">
+                    <div class="modal-content">
                     <span class="close">&times;</span>
-                    <p>New Game? New Background Music!</p>
-                </div>
-
-</div>
+                    <div id="dadJokeContainer">
+                <!-- The dad joke will be inserted here -->
+                    </div>
+                    <input type="text" id="userInput" placeholder="Type 'yes' or 'no' (to exit)">
+                    </div>
+    </div>
             </ul>
         </nav>
         <div class="banner">

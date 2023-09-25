@@ -1,49 +1,25 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Get references to the banner and imageContainer
-    const banner = document.querySelector('.banner');
-    const imageContainer = document.querySelector('#imageContainer');
+// Get the modal
+var modal = document.getElementById("gamesModal");
 
-    // Get reference to the newgames button
-    const newgamesButton = document.querySelector('#newgames');
+// Get the button that opens the modal
+var btn = document.getElementById("gamesBtn");
 
-    // Add a click event listener to the newgames button
-    newgamesButton.addEventListener('click', function () {
-        // Hide the banner and imageContainer
-        banner.style.display = 'none';
-        imageContainer.style.display = 'none';
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
 
-        // Create and populate the sort dropdown
-        const sortDropdown = document.createElement('select');
-        sortDropdown.id = 'sortDropdown';
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
 
-        // Add options to the dropdown
-        const options = [
-            { value: 'popularity', text: 'Popularity' },
-            { value: 'release_date', text: 'Release Date' },
-            // Add more sorting options as needed
-        ];
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
 
-        options.forEach((option) => {
-            const dropdownOption = document.createElement('option');
-            dropdownOption.value = option.value;
-            dropdownOption.textContent = option.text;
-            sortDropdown.appendChild(dropdownOption);
-        });
-
-        // Append the sortDropdown to a container or form on your page
-        // Example:
-        const filterContainer = document.querySelector('#filterContainer');
-        filterContainer.appendChild(sortDropdown);
-
-        // Fetch data from the API
-        fetch('https://www.freetogame.com/api/games?platform=pc')
-            .then((response) => response.json())
-            .then((data) => {
-                // Process and display the fetched data as needed
-                console.log(data);
-            })
-            .catch((error) => {
-                console.error('Error fetching data:', error);
-            });
-    });
-});
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
