@@ -18,15 +18,16 @@
         </div>
         <nav>
             <ul>
-                <li> <button id="gamesBtn">New Games</button> </li>
+                <li> <button id="openGamesBtn">New Games</button> </li>
                 <!-- Games Modal -->
-                <div id="gamesModal" class="modal">
-                    <!-- Modal content -->
+                <div id="gamesModal" class="games-modal">
                     <div class="games-modal-content">
-                        <span class="close">&times;</span>
-                        <p>Find your New Game here</p>
-                      </div>
-                    </div>   
+                        <span class="exit" id="closeModalBtn">&times;</span>
+                        <h2>Games Released This Year</h2>
+                        <div id="gamesList"></div>
+                        <button id="loadMoreBtn">Load More Games</button>
+                    </div>
+                </div>
                 <li> <button id="dad-button">Want to hear a joke?</button></li>
                 <!-- Your modal structure with a container for the dad joke and user input -->
                     <div id="dadModal" class="modal">
