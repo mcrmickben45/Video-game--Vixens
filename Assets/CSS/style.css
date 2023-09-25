@@ -58,7 +58,7 @@ button {
 
 
 /* Styles for the modal and its content */
-.games-modal {
+.modal, .games-modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -67,7 +67,7 @@ button {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.7); /* Semi transparent black overlay */
 }
 
 .games-modal-content {
@@ -84,9 +84,7 @@ button {
   cursor: pointer;
 }
 
-
-
-.modal {
+/* .modal {
   display: none; Hide the modal by default
   position: fixed;
   z-index: 1;
@@ -94,9 +92,9 @@ button {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black overlay */
+  background-color: rgba(0, 0, 0, 0.7); 
   overflow: auto;
-}
+} */
 
 .dad-modal-content {
   background-color: white; /* White background for the content */
@@ -162,3 +160,7 @@ h3 {
   cursor: pointer;
 }
 
+#div {
+  width: 200pxx;
+  height: 200px;
+}

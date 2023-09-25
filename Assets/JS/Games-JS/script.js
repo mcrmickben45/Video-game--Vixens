@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
                   const gameElement = document.createElement("div");
                   gameElement.innerHTML = `
                       <h3>${game.name}</h3>
-                      <img src="${game.background_image}" alt="${game.name}">
+                      <img src="${game.background_image}" alt="${game.name}" style="width: 400px; height: 350px;">
                       <p>Platforms: ${game.platforms.map((platform) => platform.platform.name).join(", ")}</p>
                   `;
                   gamesList.appendChild(gameElement);
@@ -48,82 +48,3 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Get the modal
-// const modal = document.getElementById("gamesModal");
-
-// Get the button that opens the modal
-// const btn = document.getElementById("openGamesBtn");
-
-// Get the <span> element that closes the modal
-// const span = document.getElementsByClassName("close")[0];
-
-// const gameList = document.querySelector("gamesList");
-// const loadMoreBtn = document.getElementById("loadMoreBtn");
-// let nextGamesList = null;
-
-// When the user clicks on the button, open the modal
-// btn.onclick = function() {
-//   fetchGamesData();
-//   modal.style.display = "block";
-// }
-
-// When the user clicks on <span> (x), close the modal
-// span.onclick = function() {
-//   modal.style.display = "none";
-// }
-
-// When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
-
-
-// const apiKey = "780187723c4d434eaa43adc592fca0c9"
-// const apiUrl = "https://api.rawg.io/api/games?key=780187723c4d434eaa43adc592fca0c9&dates=2023-01-01,2023-12-31&ordering=-added";
-
-
-
-// function fetchGamesData(url) {
-//     fetch(apiUrl)
-//     .then((response) => response.json())
-//     .then((data) => {
-//       data.games.forEach((game) => {
-//         const gameCard = document.createElement("div");
-//         gameCard.classList.add("game-card");
-//         gameCard.innerHTML = `
-//                     <img src="${game.image}" alt="${game.title}" width="150">
-//                     <h3>${game.title}</h3>
-//                 `;
-//                 gamesList.appendChild(gameCard);
-//             });
-//     })
-//     .catch((error) => {
-//       console.error('Error fetching data:', error);
-//     });
-//   }
-
-  // load games 
-  // loadMoreBtn.addEventListener("click", () => {
-  //   if(nextGamesListfetchGamesData();
-  // });
