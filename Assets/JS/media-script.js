@@ -24,7 +24,7 @@ function organizeImages() {
      imageFiles.forEach((imageFile, index) => {
         const imageElement = document.createElement('img');
         imageElement.src = imageFile;
-        imageElement.alt = 'Image';
+        imageElement.alt = 'image';
         imageElement.className = 'image'; // Optional: Add a CSS class for styling
 
         // Add CSS styles for uniform image size and arranging them in rows of three
@@ -53,7 +53,7 @@ function organizeImages() {
     imageFiles.forEach(imageFile => {
         const imageElement = document.createElement('img');
         imageElement.src = imageFile;
-        imageElement.alt = 'Image';
+        imageElement.alt = 'image';
         imageElement.className = 'image'; // Optional: Add a CSS class for styling
             // Append each image element to the container
             imageContainer.appendChild(imageElement);
