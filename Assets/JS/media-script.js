@@ -1,19 +1,19 @@
 // Array of image file paths
 const imageFiles = [
-    './assets/Images/Games-Images/smite.jpg', 
-    './assets/Images/Games-Images/FallGuys.jpg',
+    './assets/images/Games-Images/smite.jpg', 
+    './assets/images/Games-Images/FallGuys.jpg',
     './assets/images/Games-Images/Asphalt.jpeg',
-    './assets/Images/Games-Images/lol.jpg', 
-    './assets/Images/Games-Images/kartrider.jpg',
+    './assets/images/Games-Images/lol.jpg', 
+    './assets/images/Games-Images/kartrider.jpg',
     './assets/images/Games-Images/BrawlHalla.jpeg',
-    './assets/Images/Games-Images/genshin.jpg',
-    './assets/Images/Games-Images/Warframe.jpg',
+    './assets/images/Games-Images/genshin.jpg',
+    './assets/images/Games-Images/Warframe.jpg',
     './assets/images/Games-Images/Destiny 2.jpeg',
-    './assets/Images/Games-Images/apex-legends.jpg', 
+    './assets/images/Games-Images/apex-legends.jpg', 
     './assets/images/Games-Images/Fortnite.jpeg',
-    './assets/Images/Games-Images/runescape.jpg', 
+    './assets/images/Games-Images/runescape.jpg', 
     './assets/images/Games-Images/Halo.jpeg',
-    './assets/Images/Games-Images/brawlhalla.jpg',
+    './assets/images/Games-Images/brawlhalla.jpg',
     './assets/images/Games-Images/Rocket League.jpeg',
 ];
 
