@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Videogame Vixens</title>
+    <!-- Links Skeleton CSS & external CSS -->
     <link rel="stylesheet" href="./Assets/CSS/src/skeleton.css">
     <link rel="stylesheet" href="./Assets/CSS/src/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,45 +12,52 @@
     <link rel="stylesheet" type="text/css" href="./Assets/CSS/style.css">
 </head>
 <body>
+    <!-- Function assigns header and webpage title to CSS -->
     <div class="header">
         <div class="title">
             <h1>Videogame Vixens</h1>
             <h2>New Games</h2>
         </div>
         <nav>
+            <!-- Button functions to call modal and JS functions -->
             <ul>
                 <li> <button id="openGamesBtn">New Games</button> </li>
                 <!-- Games Modal -->
                 <div id="gamesModal" class="games-modal">
                     <div class="games-modal-content">
                         <span class="exit" id="closeModalBtn">&times;</span>
-                        <h2>Games Released This Year</h2>
+                        <h2>Find New Games Released Here</h2>
                         <div id="gamesList"></div>
                         <button id="loadMoreBtn">Load More Games</button>
                     </div>
                 </div>
-                <li> <button id="dad-button">Want to hear a joke?</button></li>
-                <!-- Your modal structure with a container for the dad joke and user input -->
+                <!-- Button functions to call modal and JS functions -->
+                <li> <button id="dad-button">Want to Hear a Joke?</button></li>
+                <!-- Modal structure with a container for the dad joke and user input -->
                     <div id="dadModal" class="modal">
                     <div class="modal-content">
                     <span class="close">&times;</span>
                     <div id="dadJokeContainer">
-                <!-- The dad joke will be inserted here -->
+                <!-- Dad jokes will be displayed here -->
                     </div>
-                    <input type="text" id="userInput" placeholder="Type 'yes' or 'no' (to exit)">
+                    <input type="text" id="userInput" placeholder="Type 'yes' or 'no' (to exit). Click on the joke to add to your favorites!">
                     </div>
+                <!-- Container function for favorite jokes -->
+                    <div id="favoriteJokesContainer"></div>
     </div>
             </ul>
         </nav>
+        <!-- Console image banner -->
         <div class="banner">
             <img src="./Assets/images/Misc./console-message-removebg-preview.png" width = 50%>
             <h3>Explore New Horizons</h3>
             <div class ="image" id="imageContainer">
-                <!-- Media files will be displayed here -->
+                <!-- Media files of games will be displayed here -->
             </div>
-                <!--Media files for potential music displayed here-->
+
+            <!-- JavaScript -->
             <script src="./Assets/JS/media-script.js"></script>
             <script src="./Assets/JS/Games-JS/script.js"></script>
-            <script src="./Assets/JS/Music-JS/script.js"></script>
+            <script src="./Assets/JS/Jokes-JS/script.js"></script>
         </body>
 </html>

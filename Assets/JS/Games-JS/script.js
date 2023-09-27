@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const openGamesBtn = document.getElementById("openGamesBtn");
-  const closeModalBtn = document.getElementById("closeModalBtn");
-  const modal = document.getElementById("gamesModal");
-  const gamesList = document.getElementById("gamesList");
-  const loadMoreBtn = document.getElementById("loadMoreBtn");
+const openGamesBtn = document.getElementById("openGamesBtn");
+const closeModalBtn = document.getElementById("closeModalBtn");
+const modal = document.getElementById("gamesModal");
+const gamesList = document.getElementById("gamesList");
+const loadMoreBtn = document.getElementById("loadMoreBtn");
   
   const apiKey = "780187723c4d434eaa43adc592fca0c9"; //  API key from RAWG API
   const baseUrl = `https://api.rawg.io/api/games?key=780187723c4d434eaa43adc592fca0c9&`;
